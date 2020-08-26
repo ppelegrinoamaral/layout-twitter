@@ -1,0 +1,36 @@
+body {
+    background-color: white;
+}
+
+ul {
+    list-style-type: none;
+    height: 600px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    display: inline-block;
+}
+
+ul img {
+    width: 25px;
+    height: 25px;
+    padding: 25px 20px 0 10px;
+}
+
+.logo {
+    padding: 10px 0 0 10px;
+}
+
+.tweet {
+    background: #00aaec;
+    margin: 20px 0 0 10px;
+    width: 210px;
+    height: 50px;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
