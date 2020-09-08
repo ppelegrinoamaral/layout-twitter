@@ -1,0 +1,23 @@
+/*Side bar - menu*/
+.menu {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.tweet {
+    flex-grow: 10;
+}
+
+.profile {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Tweet bar*/
+

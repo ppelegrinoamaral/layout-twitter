@@ -4,22 +4,31 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="flexbox.css">
     </head>
 
     <body>
-        <div id=menu>
-            <ul>
-                <li><img class=logo src="bird.png" alt="Logo do Twitter"></li>
-                <li><img class=home src="home.png" alt="Ícone Home">Home</li>
-                <li><img class=explore src="hashtag.png" alt="Ícone Explore">Explore</li>
-                <li><img class=notifications src="bell.png" alt="Ícone Notifications">Notifications</li>
-                <li><img class=messages src="message.png" alt="Ícone Messages">Messages</li>
-                <li><img class=bookmarks src="bookmark.png" alt="Ícone Bookmarks">Bookmarks</li>
-                <li><img class=lists src="list.png" alt="Ícone Lists">Lists</li>
-                <li><img class=profile src="profile.png" alt="Ícone Profile">Profile</li>
-                <li><img class=more src="more.png" alt="Ícone More">More</li>
-                <li><input class=tweet type="button" value="Tweet">
-            </ul>
+        <div>
+            <nav class="menu">
+                <a href="#"><img class="menu-items-logo" src="bird.png"></a>
+                <a href="#"><img class="menu-items" src="home.png">Home</a>
+                <a href="#"><img class="menu-items" src="hashtag.png">Explore</a>
+                <a href="#"><img class="menu-items" src="bell.png">Notifications</a>
+                <a href="#"><img class="menu-items" src="message.png">Messages</a>
+                <a href="#"><img class="menu-items" src="bookmark.png">Bookmarks</a>
+                <a href="#"><img class="menu-items" src="list.png">Lists</a>
+                <a href="#"><img class="menu-items" src="profile.png">Profile</a>
+                <a href="#"><img class="menu-items" src="more.png">More</a>
+                <button class="tweet">Tweet</button>
+            </nav>
+
+            <div class="profile">
+                <img class="foto-profile" src="perfil.png">
+                    <div class="name">
+                        <a class="first-name" href="#">Paula</a>
+                        <a class="login-name" href="#">@Paulisssima</a>
+                    </div>
+            </div>
         </div>
     </body>
 </html>
