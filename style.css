@@ -1,36 +1,64 @@
-body {
-    background-color: white;
-}
-
-ul {
-    list-style-type: none;
-    height: 600px;
+/*Side bar - menu*/
+.menu {
+    width: 15%;
+    margin-left: 50px;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 20px;
-    display: inline-block;
 }
 
-ul img {
-    width: 25px;
-    height: 25px;
-    padding: 25px 20px 0 10px;
+.menu-items, .menu-items-logo {
+    width: 28px;
+    height: 28px;
+    padding: 0 20px 0 10px;
 }
 
-.logo {
-    padding: 10px 0 0 10px;
+.menu a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 0 10px 0;
+}
+
+.menu a:hover {
+    color: #00aaec;
+    background: #e6f8f8;
+    border-radius:30px;
 }
 
 .tweet {
     background: #00aaec;
-    margin: 20px 0 0 10px;
+    color: white;
     width: 210px;
     height: 50px;
-    color: white;
-    font-size: medium;
-    font-weight: bold;
+    margin-top: 20px;
+    font-size: 16px;
     border: none;
     border-radius: 30px;
     font-family: 'Poppins', sans-serif;
+    font-weight: bold;
     text-align: center;
+}
+
+.profile {
+    margin: 30px 0 0 60px;
+}
+
+.foto-profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    margin-right: 10px;
+}
+
+section a {
+    text-decoration:none;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-weight: bold;
+}
+
+.login-name {
+    color: gray;
+    font-weight: lighter;
 }
