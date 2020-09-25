@@ -85,9 +85,13 @@ body {
 }
 
 /*Tweet-bar*/
+.middle-column {
+    width: 600px;
+}
+
 .header-tweet-bar {
-    width:550px;
     height:20px;
+    margin: 0;
     border:1px solid rgb(233, 231, 231);
     border-top: none;
     padding: 20px;
@@ -177,4 +181,94 @@ body {
     cursor: pointer;
 }
 
+/*Feed*/
+.feed {
+    border:1px solid rgb(233, 231, 231);
+    font-size: 15px;
+}
 
+.header-feed {
+    display: flex;
+    flex-direction: row;
+}
+
+.feed-photo__tweet {
+    width: 70px;
+    height: 0;
+}
+
+.account-id {
+    width: 530px;
+    height: 20px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-name {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+.check, .down-icon, .link-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.login-name {
+    text-decoration: none;
+    color: gray;
+    font-weight: lighter;
+}
+
+.down-icon {
+    margin-right: 16px ;
+}
+
+.post-lide {
+    width: 530px;
+    height: auto;
+    padding-left: 60px;
+}
+
+.post-lide p {
+    margin: 0;
+    padding: 5px 0 0 10px;
+}
+
+.headline {
+    margin: 10px 16px 0 70px;
+    border:1px solid rgb(233, 231, 231);
+    border-radius: 2%;
+}
+
+.headline-image {
+    width: 510px;
+    border-radius: 2%;
+}
+
+.tittle {
+    margin: 10px 8px 0 8px;
+}
+
+.lide {
+    color: gray;
+    margin: 2px 8px 2px 8px;
+}
+
+.link-page {
+    text-decoration: none;
+    color: gray;
+}
+
+.post-icons{
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.comment-icon, .retweet-icon, .like-icon, .upload-icon {
+    width: 20px;
+    height: 20px;
+}
