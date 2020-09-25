@@ -12,56 +12,138 @@
         <div class="homepage">
             <div>
                 <nav class="menu">
-                    <a href="#"><img class="menu-items-logo" src="assets/icons/bird.png"></a>
-                    <a href="#"><img class="menu-items" src="assets/icons/home.png">Home</a>
-                    <a href="#"><img class="menu-items" src="assets/icons/hashtag.png">Explore</a>
-                    <a href="#"><img class="menu-items" src="assets/icons/bell.png">Notifications</a>
-                    <a href="#"><img class="menu-items" src="assets/icons/message.png">Messages</a>
-                    <a href="#"><img class="menu-items" src="assets/icons/bookmark.png">Bookmarks</a>
-                    <a href="#"><img class="menu-items" src="assets/icons/list.png">Lists</a>
-                    <a href="#"><img class="menu-items" src="assets/icons/profile.png">Profile</a>
-                    <a href="#"><img class="menu-items" src="assets/icons/more.png">More</a>
-                    <input type="button" class="tweet" value="Tweet">
+                    <a href="#">
+                        <img class="menu-items-logo" src="assets/icons/bird.png"/>
+                    </a>
+                    <a href="#">
+                        <img class="menu-items" src="assets/icons/home.png"/>Home
+                    </a>
+                    <a href="#">
+                        <img class="menu-items" src="assets/icons/hashtag.png"/>Explore
+                    </a>
+                    <a href="#">
+                        <img class="menu-items" src="assets/icons/bell.png"/>Notifications
+                    </a>
+                    <a href="#">
+                        <img class="menu-items" src="assets/icons/message.png"/>Messages
+                    </a>
+                    <a href="#">
+                        <img class="menu-items" src="assets/icons/bookmark.png"/>Bookmarks
+                    </a>
+                    <a href="#">
+                        <img class="menu-items" src="assets/icons/list.png"/>Lists
+                    </a>
+                    <a href="#">
+                        <img class="menu-items" src="assets/icons/profile.png"/>Profile
+                    </a>
+                    <a href="#">
+                        <img class="menu-items" src="assets/icons/more.png"/>More
+                    </a>
+                    <input type="button" class="create-tweet" value="Tweet">
                 </nav>
 
                 <div class="profile">
-                    <img class="foto-profile" src="assets/images/perfil.png">
+                    <img class="photo-profile" src="assets/images/perfil.png"/>
                         <div class="name">
-                            <a class="first-name" href="#">Paula</a>
-                            <a class="login-name" href="#">@Paulisssima</a>
+                            <a href="#">Paula</a>
+                            <a href="#">@Paulisssima</a>
                         </div>
                 </div>
             </div>
 
-            <div class="tweet-bar">
-                <div class="cabecalho">
-                    <a href="#">Home</a>
-                    <a href="#"><img class="top-tweets" src="assets/icons/star.png"></a>                
-                </div>
-
-                <div class="tweet-box">
-                    <div class="tweet-box__post">
-                        <a href="#"><img class="foto-tweet" src="assets/images/perfil.png"></a>
-
-                        <div class="post">
-                            <form action="#" method="POST"></form>
-                                <label for="tweet-post"></label>
-                                <textarea id="tweet-post" maxlength="140" required placeholder="What's happening?"></textarea>
-                        </div>
+            <div class="middle-column">
+                <div class="tweet-bar">
+                    <div class="header-tweet-bar">
+                        <a href="#">Home</a>
+                        <a href="#">
+                            <img src="assets/icons/star.png"/>
+                        </a>                
                     </div>
 
-                    <div class="tweet-bar-footer">
-                        <div class="tweet-bar-icons">
-                            <a href="#"><img class="image-item" src="assets/icons/image.png"></a>
-                            <a href="#"><img class="gif-item" src="assets/icons/gif.png"></a>
-                            <a href="#"><img class="grafic-item" src="assets/icons/grafic.png"></a>
-                            <a href="#"><img class="smile-item" src="assets/icons/smile.png"></a>
-                            <a href="#"><img class="calendar-item" src="assets/icons/calendar.png"></a>
+                    <div class="tweet-box">
+                        <div class="tweet-box__post">
+                            <a href="#">
+                                <img class="photo-tweet" src="assets/images/perfil.png"/>
+                            </a>
+
+                            <div class="post">
+                                <form action="#" method="POST">
+                                    <label for="tweet-post"></label>
+                                    <textarea class="tweet-post" maxlength="140" required placeholder="What's happening?"></textarea>
+                                </form>
+                            </div>
                         </div>
 
-                        <div>
-                            <input type="button" class="tweet-button" value="Tweet">
+                        <div class="tweet-bar-footer">
+                            <div class="tweet-bar-icons">
+                                <a href="#">
+                                    <img class="image-item" src="assets/icons/image.png"/></a>
+                                <a href="#">
+                                    <img class="gif-item" src="assets/icons/gif.png"/></a>
+                                <a href="#">
+                                    <img class="grafic-item" src="assets/icons/grafic.png"/></a>
+                                <a href="#">
+                                    <img class="smile-item" src="assets/icons/smile.png"/></a>
+                                <a href="#">
+                                    <img class="calendar-item" src="assets/icons/calendar.png"/></a>
+                            </div>
+
+                            <div>
+                                <input type="button" class="post-tweet" value="Tweet">
+                            </div>
                         </div>
+                    </div>
+                </div>
+
+                <div class="feed">
+                    <div class="header-feed">
+                        <div class="feed-photo__tweet">
+                            <a href="#">
+                                <img class="photo-tweet" src="assets/images/cnn.png"></a>
+                       </div>
+                       <div class="account-id">
+                            <div class="account-info">
+                                <a href="#" class="post-name">CNN Brasil
+                                    <img class="check" src="assets/icons/check.png"></a>
+                                <a href="#" class="login-name">@CNNBrasil • Sep 22</a>
+                            </div>
+                            <div class="account-down__icon">
+                            <a href="#">
+                                <img class="down-icon" src="assets/icons/down.png"></a>
+                            </div>
+                        </div>                                            
+                    </div>
+                    <div class="post-lide">
+                        <p>
+                            Miguel Nicolelis falou à CNN sobre a pesquisa que sugere relação 
+                            entre a dengue e uma possível defesa contra a Covid-19
+                        </p>
+                    </div> 
+
+                    <div class="headline">
+                        <a href="#" class="headline-link">
+                            <img class="headline-image" src="assets/images/med.png">
+                        </a>
+                        <p class="tittle">
+                            Estudo pode levar ao uso de vacina da dengue contra Covid-19, diz pes...
+                        </p>
+                        <p class="lide">
+                            Caso seja comprovada, a pesquisa sobre relação entre dengue e possível 
+                            defesa para Covid-19 aponta para possibilidade de uso emergencial de...
+                            <br>
+                            <a href="#" class="link-page">
+                                <img class="link-icon" src="assets/icons/link.png"> cnnbrasil.com.br</a>
+                        </p>
+                    </div>
+                    <div class="post-icons">
+                        <a href="#">
+                            <img class="comment-icon" src="assets/icons/comment.png"></a>
+                        <a href="#">
+                            <img class="retweet-icon" src="assets/icons/retweet.png"></a>
+                        <a href="#">
+                            <img class="like-icon" src="assets/icons/like.png"></a>
+                        <a href="#">
+                            <img class="upload-icon" src="assets/icons/upload.png"></a>
                     </div>
                 </div>
             </div>
