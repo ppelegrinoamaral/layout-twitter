@@ -1,10 +1,21 @@
+/*Homepage*/
+.homepage {
+    display: flex;
+    flex-direction: row;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 /*Side bar - menu*/
 .menu {
-    width: auto;
     margin: 0 50px 0 50px;
-    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 20px;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
 }
 
 .menu-items, .menu-items-logo {
@@ -25,7 +36,7 @@
     border-radius:30px;
 }
 
-.tweet {
+.create-tweet {
     background: #00aaec;
     color: white;
     width: 210px;
@@ -34,67 +45,73 @@
     font-size: 16px;
     border: none;
     border-radius: 30px;
-    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     text-align: center;
     outline: none;
     cursor: pointer;
+    flex-grow: 10;
 }
 
 .profile {
     margin: 30px 0 0 60px;
+    display: flex;
+    justify-content: flex-start;
 }
 
-.foto-profile {
+.photo-profile {
     width: 40px;
     height: 40px;
     border-radius: 40px;
     margin-right: 10px;
 }
 
-.first-name {
+.name {
+    display: flex;
+    flex-direction: column;
+}
+
+.name a:first-child {
     text-decoration:none;
     font-size: 14px;
-    font-family: 'Poppins', sans-serif;
     color: black;
     font-weight: bold;
 }
 
-.login-name {
+.name a:last-child {
     text-decoration:none;
     font-size: 14px;
-    font-family: 'Poppins', sans-serif;
     color: gray;
     font-weight: lighter;
 }
 
 /*Tweet-bar*/
-.cabecalho {
-    width:550px;
+.middle-column {
+    width: 600px;
+}
+
+.header-tweet-bar {
     height:20px;
+    margin: 0;
     border:1px solid rgb(233, 231, 231);
     border-top: none;
     padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.cabecalho a {
+.header-tweet-bar a {
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 20px;
     color: black;
 }
 
-.top-tweets:hover {
+.header-tweet-bar a:last-child:hover {
     background: #e6f8f8;
-    border-radius:30px;
-}
-
-.foto-tweet {
-    width: 50px;
-    height: 50px;
-    border-radius: 40px;
-    padding: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius:100%;
 }
 
 .tweet-box {
@@ -104,7 +121,19 @@
     border-bottom: 10px solid rgb(233, 231, 231);
 }
 
-#tweet-post {
+.tweet-box__post {
+    display: flex;
+    flex-direction: row;
+}
+
+.photo-tweet {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    padding: 10px;
+}
+
+.tweet-post {
     border: none;
     width: 500px;
     height: 60px;
@@ -112,11 +141,18 @@
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     padding-top: 20px;
+    resize: none;
 }
 
-#tweet-post::placeholder {
-    font-family: 'Poppins', sans-serif;
+.tweet-post::placeholder {
     font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tweet-bar-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .tweet-bar-icons {
@@ -129,7 +165,7 @@
     height: 25px;
 }
 
-.tweet-button {
+.post-tweet {
     background: #00aaec;
     color: white;
     width: 90px;
@@ -137,7 +173,6 @@
     font-size: 16px;
     border: none;
     border-radius: 30px;
-    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     text-align: center;
     margin-right: 15px;
@@ -145,4 +180,118 @@
     cursor: pointer;
 }
 
+/*Feed*/
+.feed {
+    border:1px solid rgb(233, 231, 231);
+    font-size: 15px;
+}
+
+.header-feed {
+    display: flex;
+    flex-direction: row;
+}
+
+.feed-photo__tweet {
+    width: 70px;
+    height: 0;
+}
+
+.account-id {
+    width: 530px;
+    height: 20px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-name {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+.check, .down-icon, .link-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.login-name {
+    text-decoration: none;
+    color: gray;
+    font-weight: lighter;
+}
+
+.down-icon {
+    margin-right: 16px ;
+}
+
+.post-lide {
+    width: 530px;
+    height: auto;
+    padding-left: 60px;
+}
+
+.post-lide p {
+    margin: 0;
+    padding: 5px 0 0 10px;
+}
+
+.headline {
+    margin: 10px 16px 0 70px;
+    border:1px solid rgb(233, 231, 231);
+    border-radius: 2%;
+}
+
+.headline-image {
+    width: 510px;
+    border-radius: 2%;
+}
+
+.tittle {
+    margin: 10px 8px 0 8px;
+}
+
+.lide {
+    color: gray;
+    margin: 2px 8px 2px 8px;
+}
+
+.link-page {
+    text-decoration: none;
+    color: gray;
+}
+
+.post-icons{
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.comment-icon, .retweet-icon, .like-icon, .upload-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/*Search-bar*/
+.search-bar__bar {
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(233, 231, 231);
+    width: 350px;
+    height: 43px;
+    margin: 0 0 10px 30px;
+    padding: 0 30px 0 30px;
+}
+
+.search-bar__bar::placeholder {
+    font-size: 16px;
+    padding-left: 30px;
+}
+
+.search-bar__bar:focus {
+    outline: 0;
+    background-color: white;
+    border: 1px solid #00aaec;
+    padding: 0 30px 0 30px;
+}
 
